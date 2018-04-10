@@ -2,7 +2,7 @@ import pygame
 import room
 import handle
 
-background_img_name = "img/GPA.JPG"
+background_img_name = "img/Background.JPG"
 player_img_name = "img/huaji.png"
 
 class GameOver(Exception):
@@ -11,7 +11,7 @@ class GameOver(Exception):
 def main():
     pygame.init()
     screen = pygame.display.set_mode([800,500])
-    screen_title = pygame.display.set_caption("The Binding of Issac: GPA")
+    screen_title = pygame.display.set_caption("Issac")
     background = pygame.image.load(background_img_name).convert()
     level_info = room.generate_environment()
     for item in level_info:
